@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --whatsapp-text: 0.53rem;
+}
+
+body {
+    max-width: 1440px;
+    overflow: hidden;
+    margin: auto;
+    font-family: 'Rubik', sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #3E2753;
+    font-size: 3rem;
+    margin: 30px 0;
+    font-weight: 500;
+}
+
+p {
+    color: #A39DA9;
+    font-size: 1rem;
+}
+
+/* Background */
+.left-block {
+    z-index: -1;
+    left: -10%;
+    width: 40vw;
+    height: 90vh;
+    position: absolute;
+    background: linear-gradient(190deg, hsl(293, 100%, 63%) 0%, hsl(264, 100%, 61%) 100%);
+    border-radius: 0 0 50% 50%;
+}
+
+.right-block {
+    z-index: -1;
+    right: -10%;
+    bottom: 0;
+    width: 40vw;
+    height: 90vh;
+    position: absolute;
+    background: linear-gradient(190deg, hsl(293, 100%, 63%) 0%, hsl(264, 100%, 61%) 100%);
+    border-radius: 50% 50% 0 0;
+    opacity: 3%;
+}
+
+/* Mobile */
+.content-mobile {
+    width: 250px;
+    height: 500px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.inner-content {
+    background-color: #F5F3F7;
+    border-radius: 20px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.menu-bar {
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    display: flex;
+    align-items: flex-end;
+    background: linear-gradient(-85deg, hsl(293, 100%, 63%) 0%, hsl(264, 100%, 61%) 100%);
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    position: relative;
+}
+
+.inner-menu-bar {
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    color: white;
+    font-size: 0.8rem;
+}
+
+.inner-menu-bar p {
+    font-size: 0.6rem;
+    color: #D99EFF;
+}
+
+.menu-overlay {
+    top: 0;
+    position: absolute;
+    width: 130px;
+    border-radius: 0 0 12px 12px;
+    height: 20px;
+    background-color: white;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.arrow-left {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    padding: 2px;
+
+}
+
+.inner-menu-bar-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-bar img {
+    margin: 10px;
+    width: 24px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.three-dots {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 14px;
+}
+
+.three-dots span {
+    margin: 1px;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background-color: white;
+    display: inline-block;
+}
+
+.content-text {
+    width: 30%;
+    margin-left: 180px;
+}
+
+.content-text p {
+    line-height: 1.8rem;
+}
+
+/* Whatsapp content */
+.left-message {
+    background-color:hsl(312, 100%, 93%);
+    width: 55%;
+    padding: 8px;
+    margin: 10px 10px 0 10px;
+    border-radius: 10px;
+    border-bottom-left-radius:2px;
+    display: flex;
+}
+
+.left-message p {
+    font-size: var(--whatsapp-text);
+    color: hsl(276, 55%, 52%);
+}
+
+.right-images {
+    display: flex;
+    justify-content: end;
+    margin: 10px;
+    float: right;
+    width: 100%;
+}
+
+.right-images img {
+    width: 35px;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.right-message {
+    background-color:white;
+    padding: 8px;
+    margin: 0 10px 10px 10px ;
+    border-radius: 10px;
+    border-bottom-right-radius:2px;
+    display: flex;
+    float: right;
+}
+
+.right-message p {
+    font-size: var(--whatsapp-text);
+    color: hsl(276, 55%, 52%);
+}
+
+.left-message-color {
+    background: linear-gradient(-85deg, hsl(293, 100%, 63%) 0%, hsl(264, 100%, 61%) 100%);
+    padding: 8px;
+    margin: 10px 10px 0 10px;
+    border-radius: 10px;
+    border-bottom-left-radius:2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+.left-message-color div {
+    display: flex;
+    align-items: center;
+}
+
+.left-message-color p {
+    color: rgba(255, 255, 255, 0.593);
+    font-size: var(--whatsapp-text);
+}
+
+.left-message-color span {
+    width: 15px;
+    height: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.31);
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.left-message-color h3 {
+    color: white;
+    font-size: 0.8rem;
+    padding-right: 8px;
+}
+
+.typebar {
+    background-color: white;
+    width: 90%;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin: 8px;
+}
+
+.typebar p {
+    font-size: var(--whatsapp-text);
+    color: lightgray;
+    padding-left: 8px;
+}
+
+.typebar .sendbutton {
+    background-color: hsl(271, 36%, 24%);
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.typebar .sendbutton span {
+    width: 5px;
+    height: 5px;
+    display: block;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+    transform: rotate(135deg);
+    margin: 8px;
+}
+
+@media only screen and (max-width:1100px)  {
+    .content-text {
+        width: 30%;
+        margin-left: 80px;
+    }
+    
+}
+
+@media only screen and (max-width:600px)  {
+    body {
+        overflow: auto;
+    }
+
+    .right-block {
+        display: none;
+    }
+
+    .left-block {
+        z-index: -1;
+        left: -300px;
+        top: -100px;
+        width: 500px;
+        height: 600px;
+        position: absolute;
+        background: linear-gradient(190deg, hsl(293, 100%, 63%) 0%, hsl(264, 100%, 61%) 100%);
+        border-radius: 0 0 50% 0;
+    }
+    
+    section {
+        margin-top: 80px;
+        flex-direction: column;
+        height: auto;
+    }
+
+    h1 {
+        margin-top: 80px;
+        font-size: 2.5rem;
+    }
+
+    .content-text {
+        text-align: center;
+        width: 90%;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 80px;
+    }
+}
